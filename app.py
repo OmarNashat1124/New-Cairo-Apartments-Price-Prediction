@@ -20,7 +20,7 @@ st.write("Fill in the property details below to estimate its market price.")
 
 district = st.selectbox(
     "District",
-    ["Fifth Settlement", "New Cairo", "Maadi", "Nasr City", "Heliopolis", "6 October", "Sheikh Zayed"]
+    ["Fifth Settlement", "New Cairo (Other)", "Katameya","Rehab City","Madinaty"]
 )
 
 compound_options = [
@@ -56,7 +56,7 @@ finishing_type = st.selectbox(
 
 view_type = st.selectbox(
     "View Type",
-    ["Street", "Garden", "Compound", "Nile"]
+    ["Street", "Garden", "Compound"]
 )
 
 area_sqm = st.number_input("Area (sqm)", min_value=60, max_value=400, step=1)
@@ -126,3 +126,4 @@ if st.button("Predict Price"):
     prediction = predict_and_monitor(model, df)
 
     st.success(f"💰 Estimated Property Price: {prediction:,.0f} EGP")
+
