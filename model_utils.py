@@ -92,6 +92,6 @@ def predict_and_monitor(model, input_df):
 
     return prediction
 
-def load_model(path = r"Models\catboost_model.pkl"):
+def load_model(path = "Models/catboost_model.pkl"):
     model = joblib.load(path)
     return model
