@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+scikit-learn
+catboost
+mlflow
+joblib
+matplotlib
+seaborn
+sqlalchemy
+python-dotenv
+protobuf==3.20.*
